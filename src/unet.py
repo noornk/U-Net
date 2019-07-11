@@ -209,11 +209,10 @@ def blockshaped(arr, nrows, ncols):
     return (arr.reshape(h//nrows, nrows, -1, ncols).swapaxes(1,2).reshape(-1, nrows, ncols))
 
 
-image_dir = 'INbreast/test_mass/mass'
-mask_dir = 'INbreast/test_mass/mask'
-label = 'mass'
-traindir = '/gdrive/My Drive/'
-testdir = '/gdrive/My Drive/'
+image_dir = 'data/test_mass/mass'
+mask_dir = 'data/test_mass/mask'
+traindir = './'
+testdir = './'
 
 batch_size = 1
 workers = 2
